@@ -21,11 +21,10 @@ def power(x,y)
   x**y
 end
 
-def factoral(num)
-  num.times do
-    while(num >= 1)
-      num = num * (num-1)
-    end
+def factoral(x)
+  if x <= 1
+    1
+  else
+    x * factoral(x-1)
   end
-  return num
 end

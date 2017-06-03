@@ -98,7 +98,7 @@ end
 # http://en.wikipedia.org/wiki/Factorial
 describe "factorial" do
   it "computes the factorial of 0" do
-    expect(factoral(0)).to eq(0)
+    expect(factoral(0)).to eq(1)
   end
   it "computes the factorial of 1" do
     expect(factoral(1)).to eq(1)
@@ -109,5 +109,7 @@ describe "factorial" do
   it "computes the factorial of 5" do
     expect(factoral(5)).to eq(120)
   end
-  it "computes the factorial of 10"
+  it "computes the factorial of 10" do
+    expect(factoral(10)).to eq(3628800)
+  end
 end
